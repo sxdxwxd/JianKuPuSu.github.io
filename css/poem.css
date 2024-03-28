@@ -1,0 +1,56 @@
+.poem {
+    white-space: pre-wrap; 
+    text-indent: 2em; 
+    margin: 20px 10px ;
+    position: relative; /* 设置图片容器为相对定位 */
+    z-index: 1; /* 设置图片容器的层级高于时间轴 */
+    margin-right: 100px; /* 添加左侧外边距，调整时间轴与图片之间的间距 */
+}
+
+.poem p {
+    margin: 10px 50px;
+}
+
+
+.poem-0:hover {
+    background-image: url('../scr/images/0.jpg');
+    background-size: cover; /* 让背景图片自适应大小，全部展现 */
+    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
+   
+}
+
+.poem-1:hover {
+    background-image: url('../scr/images/1.jpg');
+    background-size: cover; /* 让背景图片自适应大小，全部展现 */
+    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
+}
+
+.poem-2:hover {
+    background-image: url('../scr/images/2.jpg');
+    background-size: cover; /* 让背景图片自适应大小，全部展现 */
+    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
+}
+
+.poem-3:hover {
+    background-image: url('../scr/images/3.jpg');
+    background-size: cover; /* 让背景图片自适应大小，全部展现 */
+    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
+}
+
+.poem-4:hover {
+    background-image: url('../scr/images/4.jpg');
+    background-size: cover; /* 让背景图片自适应大小，全部展现 */
+    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
+}
+
+.poem-5:hover {
+    background-image: url('../scr/images/5.jpg');
+    background-size: cover; /* 让背景图片自适应大小，全部展现 */
+    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
+}
+
+.poem-6:hover {
+    background-image: url('../scr/images/6.jpg');
+    background-size: cover; /* 让背景图片自适应大小，全部展现 */
+    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
+}
