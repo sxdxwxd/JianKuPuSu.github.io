@@ -2,55 +2,54 @@
     white-space: pre-wrap; 
     text-indent: 2em; 
     margin: 20px 10px ;
-    position: relative; /* 设置图片容器为相对定位 */
-    z-index: 1; /* 设置图片容器的层级高于时间轴 */
-    margin-right: 100px; /* 添加左侧外边距，调整时间轴与图片之间的间距 */
+    position: relative;
+    z-index: 1;
+    margin-right: 100px;
+    overflow: hidden; /* 隐藏伪元素溢出部分 */
 }
 
 .poem p {
     margin: 10px 50px;
 }
 
+.poem:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../scr/images/0.jpg'); /* 默认背景图片 */
+    background-size: cover;
+    opacity: 0.3; /* 设置背景图片的透明度为0.3 */
+    z-index: -1; /* 将伪元素置于内容下方 */
+    transition: opacity 0.5s; /* 添加动画效果，动画时间为0.5秒 */
+}
 
-.poem-0:hover {
+.poem-0:hover::before {
     background-image: url('../scr/images/0.jpg');
-    background-size: cover; /* 让背景图片自适应大小，全部展现 */
-    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
-   
 }
 
-.poem-1:hover {
+.poem-1:hover::before {
     background-image: url('../scr/images/1.jpg');
-    background-size: cover; /* 让背景图片自适应大小，全部展现 */
-    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
 }
 
-.poem-2:hover {
+.poem-2:hover::before {
     background-image: url('../scr/images/2.jpg');
-    background-size: cover; /* 让背景图片自适应大小，全部展现 */
-    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
 }
 
-.poem-3:hover {
+.poem-3:hover::before {
     background-image: url('../scr/images/3.jpg');
-    background-size: cover; /* 让背景图片自适应大小，全部展现 */
-    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
 }
 
-.poem-4:hover {
+.poem-4:hover::before {
     background-image: url('../scr/images/4.jpg');
-    background-size: cover; /* 让背景图片自适应大小，全部展现 */
-    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
 }
 
-.poem-5:hover {
+.poem-5:hover::before {
     background-image: url('../scr/images/5.jpg');
-    background-size: cover; /* 让背景图片自适应大小，全部展现 */
-    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
 }
 
-.poem-6:hover {
+.poem-6:hover::before {
     background-image: url('../scr/images/6.jpg');
-    background-size: cover; /* 让背景图片自适应大小，全部展现 */
-    transition: background-size 0.5s; /* 添加动画效果，动画时间为0.5秒 */
 }
