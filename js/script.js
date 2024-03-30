@@ -1,22 +1,21 @@
 // 显示赏析模态框
 function showPoemAnalysis(modalId) {
     var modal = document.getElementById(modalId);
-    modal.classList.add('show');
+    modal.style.display = 'block'; // 使用display而不是class来控制显示
 }
 
 // 关闭赏析模态框
 function closeModal(modalId) {
     var modal = document.getElementById(modalId);
-    modal.classList.remove('show');
+    modal.style.display = 'none'; // 使用display而不是class来控制隐藏
 }
 
 // 点击模态框外部区域关闭模态框
 window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
-        closeModal(event.target.id);
+    if (event.target.className === 'modal') {
+        event.target.style.display = 'none';
     }
 };
-
 // 点击播放音频
 function playAudio(audioId) {
     const audio = document.getElementById(audioId);
