@@ -7,21 +7,22 @@
 }
 
 .play-button , .pause-button{
-    background-color: #e11818;
-    color: white;
-    padding: 5px 10px;
+    padding: 10px 20px;
+    color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
+    outline: none;
     /*margin-top: 10px;*/
 }
 
 .play-button {
     margin-top: 5px; /* 左侧按钮的上边距 */
+    background-color: #bf0a0a; /* 播放按钮颜色 */
 }
 
 .pause-button {
     margin-top: 5px; /* 右侧按钮的上边距 */
+    background-color: #a30e0e; /* 暂停按钮颜色 */
 }
 
 /* 播放按钮悬停效果 */
