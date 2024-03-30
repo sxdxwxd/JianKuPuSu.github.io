@@ -85,8 +85,8 @@ poems.forEach((poem, index) => {
                 </div>
             </div>
 
-            <button onclick="showPoemAnalysis('bg${index}')">创作背景</button>
-            <button onclick="showPoemAnalysis('analysis${index}')">查看赏析</button>
+            <button class="btn" onclick="showPoemAnalysis('bg${index}')">创作背景</button>
+            <button class="btn" onclick="showPoemAnalysis('analysis${index}')">查看赏析</button>
           
         </div>
         <div id="analysis${index}" class="modal">
