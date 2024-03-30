@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .poem {
     white-space: pre-wrap; 
     text-indent: 2em; 
@@ -6,6 +15,11 @@
     z-index: 1;
     margin-right: 100px;
     overflow: hidden; /* 隐藏伪元素溢出部分 */
+    padding: 20px;
+    background-color: #fff; /* 背景色 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 添加阴影 */
+    border-left: 4px solid #bf0a0a; /* 左边框 */
+    animation: fadeIn 3s;
 }
 
 .poem p {
