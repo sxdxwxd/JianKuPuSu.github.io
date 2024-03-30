@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .poem {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+    .poem {
+        font-size: 12px;
+    }
+}
