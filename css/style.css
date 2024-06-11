@@ -1,16 +1,22 @@
+@font-face {
+    font-family: '字魂白鸽天行体'; /* 自定义字体名称 */
+    src: url('D:\新建文件夹\2\思政\scr\font\字魂白鸽天行体.ttf') format('truetype'); /* 字体文件路径和格式 */
+}
+
 body {
-    font-family: 'Helvetica', sans-serif; /* 确保字体的可读性 */
-    line-height: 1.6;
-    margin: 20px auto;
+    margin: 20px auto; /* 居中页面 */
     padding: 20px;
-    background-color: #f2dede; /* 淡红色背景，象征革命火焰 */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    color: #333; /* 提高文字对比度 */
+    font-family: '字魂白鸽天行体', cursive;
+    line-height: 1.6;
+    background-color: #f9f3f3; /* 柔和的淡粉色背景 */
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5); /* 更柔和的阴影效果 */
+    color: #333; /* 深灰色文字 */
 }
 
 h1 {
     text-align: center;
     font-weight: normal;
+    color: #f8f8f8; /* 暗红色标题颜色 */
 }
 
 .timeline {
@@ -20,10 +26,10 @@ h1 {
 }
 
 .container {
-    padding: 10px 40px;
+    padding: 20px 30px; /* 增加内边距 */
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 45%; /* 调整宽度，留出更多间隔 */
     margin: 20px 0; /* 保留原有的 margin 属性 */
 }
 
@@ -32,7 +38,7 @@ h1 {
 }
 
 .right {
-    left: 50%;
+    left: 55%;
 }
 
 .content {
@@ -40,9 +46,10 @@ h1 {
     background-color: white;
     position: relative;
     border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* 增加柔和的阴影效果 */
 }
 
-/* 模态框（Modal）*/
+/* 模态框（Modal） */
 .modal {
     display: none; /* 默认隐藏 */
     position: fixed; 
@@ -52,15 +59,14 @@ h1 {
     width: 100%; /* 宽度100% */
     height: 100%; /* 高度100% */
     overflow: auto; /* 开启滚动条 */
-    background-color: rgb(0,0,0); /* 背景颜色 */
-    background-color: rgba(0,0,0,0.4); /* 黑色背景，透明度 */
+    background-color: rgba(0, 0, 0, 0.4); /* 黑色背景，透明度 */
 }
 
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% 从上部和自动水平边距 */
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #ddd; /* 柔和的边框颜色 */
     width: 80%; /* 宽度80% */
 }
 
@@ -87,7 +93,7 @@ h1 {
     content: '';
     position: absolute;
     width: 2px;
-    background-color: #bf0a0a; /* 鲜红色时间轴，象征革命 */
+    background-color: #bf2c2c; /* 暗红色时间轴 */
     top: 0;
     bottom: 0;
     left: 50%;
@@ -103,13 +109,24 @@ h1 {
     width: 25px;
     height: 25px;
     background-color: white;
-    border: 4px solid #FF9F55;
+    border: 4px solid #bf805b; /* 柔和的边框颜色 */
     border-radius: 50%;
     z-index: 1;
     transition: background-color 0.3s;
 }
 
 .container:hover::before {
-    background-color: #FF9F55;
+    background-color: #dfc7b3; /* 柔和的悬停效果 */
 }
 
+/* 添加滚动样式 */
+.content-section {
+    overflow-y: scroll;
+    height: 80vh; /* 适当设置高度 */
+    padding: 10px;
+}
+
+/* 高亮搜索匹配的诗词 */
+.highlight {
+    background-color: rgb(222, 149, 60); /* 柔和的橙黄色高亮 */
+}
