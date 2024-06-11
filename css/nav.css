@@ -1,0 +1,148 @@
+header {
+    background-color: rgb(148, 37, 37);
+    padding: 20px;
+    text-align: center;
+    color: white; /* 白色文字提高可读性 */
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(148, 37, 37);
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.nav-button {
+    background-color: rgba(148, 37, 37, 0.8);
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* 添加圆角 */
+}
+
+.nav-button:hover, .nav-button.active {
+    background-color: white;
+    color: rgb(148, 37, 37);
+}
+
+nav .selected {
+    background-color: rgb(201, 84, 49);
+    color: #333;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: 3px solid rgba(201, 84, 49, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.content-section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fefae0; /* 更改背景颜色稍微区分内容块与背景 */
+    border-radius: 10px; /* 添加圆角 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 添加更细的阴影 */
+    display: none;
+}
+
+.content-section p {
+    text-indent: 2em; /* 设置首行缩进为2个字符的宽度 */
+    line-height: 1.6; /* 稍微调整行间距 */
+    margin-bottom: 1em; /* 为段落之间添加间距 */
+    color: #333; /* 更改文本颜色以提高可读性 */
+}
+
+.content-section h3 {
+    text-align: center; /* 将标题居中 */
+    font-weight: bold; /* 加粗标题 */
+    margin-bottom: 1em; /* 添加底部间距 */
+    color: #444; /* 改进标题颜色 */
+    font-size: 1.4em; /* 调整字体大小 */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(148, 37, 37);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#main {
+    display: block; /* 默认显示 */
+}
+
+.image-container {
+    text-align: center; /* 将其中的内容居中对齐 */
+    margin: 20px 0; /* 增加外边距 */
+}
+
+.image-container img {
+    max-width: 100%; /* 保证图片不超过容器宽度 */
+    display: inline-block; /* 使图片成为行内块元素以实现水平居中 */
+    border: 3px solid #ccc; /* 增加图片边框 */
+    border-radius: 10px; /* 图片圆角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加柔和阴影 */
+}
+
+.left-image {
+    float: left;
+    margin-right: 10px; /* 调整图片和文本之间的间距 */
+    border: 2px solid #ddd; /* 图片边框 */
+    border-radius: 8px; /* 圆角 */
+}
+
+.text-content {
+    overflow: hidden; /* 清除浮动 */
+}
+
+#button-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    position: fixed; /* 固定位置 */
+    
+    right: 20%; /* 位于右边偏移20% */
+    transform: translateY(-50%); /* 垂直居中偏移修正 */
+    z-index: 1000; /* 确保在较高层级显示 */
+}
+
+/* 按钮样式 */
+#toggle-button {
+    background-color: #a51c35; /* 按钮背景色 */
+    color: #fff; /* 按钮文字颜色 */
+    border: none; /* 移除边框 */
+    border-radius: 8px; /* 添加圆角 */
+    padding: 12px 24px; /* 按钮内边距 */
+    font-size: 16px; /* 字体大小 */
+    cursor: pointer; /* 鼠标变为手型 */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* 添加过渡效果 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
+
+/* 按钮悬停样式 */
+#toggle-button:hover {
+    background-color: #ae3a1a; /* 更深的背景色 */
+    transform: translateY(-2px); /* 提升悬停 */
+}

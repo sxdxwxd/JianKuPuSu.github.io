@@ -1,0 +1,51 @@
+#quote-box {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 220px; /* 调整宽度稍大一些 */
+  padding: 15px; /* 增加内边距 */
+  background-color: rgba(191, 10, 10, 0.9); /* 增加背景透明度，使其不那么刺眼 */
+  border: 2px solid #900;
+  border-radius: 8px; /* 增大圆角 */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* 增加阴影，稍微增强 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s, background-color 0.3s; /* 添加背景色过渡 */
+}
+
+#quote-box:hover {
+  transform: scale(1.05); /* 放大效果 */
+  background-color: rgba(191, 10, 10, 1); /* 悬停时背景色稍微变为不透明 */
+}
+
+
+#quote-text {
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+#date-display {
+  font-size: 12px;
+  color: #f8f8f8;
+  transition: opacity 0.5s;
+  opacity: 1;
+  margin-top: 8px; /* 增加顶部间距 */
+}
+
+#qr-code {
+  margin-top: 10px; /* 增加上边距，与引用框文本分开 */
+}
+
+#qr-code img {
+  width: 100px; /* 设置图片宽度 */
+  height: auto; /* 根据宽度自适应高度 */
+  border: 2px solid #fff; /* 增加白色边框 */
+  border-radius: 5px; /* 增加圆角 */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* 添加柔和阴影 */
+}

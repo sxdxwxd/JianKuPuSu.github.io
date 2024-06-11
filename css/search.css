@@ -1,0 +1,43 @@
+#search-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    position: fixed;
+    right: 20px; /* 移动到右侧，同时保持固定位置 */
+    top: 60px; /* 微调位置，以避免与其他固定元素重叠 */
+    padding: 10px; /* 增加内边距 */
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+    border-radius: 8px; /* 添加圆角 */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
+
+/* 搜索输入框样式 */
+#search-input {
+    padding: 8px; /* 增加内边距 */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 4px; /* 添加圆角 */
+    width: 160px; /* 固定宽度 */
+}
+
+/* 搜索按钮样式 */
+#search-container button {
+    padding: 8px 15px; /* 增加内边距 */
+    margin-left: 10px; /* 增加左右间距 */
+    background-color: #d92b2b; /* 使用革命红 */
+    color: white;
+    border: none;
+    border-radius: 4px; /* 添加圆角 */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* 添加过渡效果 */
+}
+
+#search-container button:hover {
+    background-color: #eb4d26; /* 悬停时稍微变亮 */
+    transform: scale(1.05); /* 悬停时的放大效果 */
+}
+
+#search-container button:active {
+    background-color: #c02424; /* 点击时变深 */
+    transform: scale(0.95); /* 点击时的缩放效果 */
+}
