@@ -1,33 +1,43 @@
-/* 添加播放按钮样式 */
 .button-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 5px; /* 设置按钮之间的间距为 5px */
+    gap: 10px; /* 设置按钮之间的间距为 10px */
+    margin-top: 20px; /* 整体上边距 */
+    padding: 10px; /* 内边距 */
 }
 
-.play-button , .pause-button{
-    padding: 10px 20px;
+/* 通用按钮样式 */
+.play-button, .pause-button {
+    padding: 12px 25px; /* 增加内边距，使按钮更大 */
     color: #fff;
     border: none;
     cursor: pointer;
     outline: none;
-    /*margin-top: 10px;*/
+    border-radius: 8px; /* 添加圆角 */
+    transition: background-color 0.3s, transform 0.2s;
 }
 
+/* 播放按钮样式 */
 .play-button {
-    margin-top: 5px; /* 左侧按钮的上边距 */
     background-color: #bf0a0a; /* 播放按钮颜色 */
 }
 
+/* 暂停按钮样式 */
 .pause-button {
-    margin-top: 5px; /* 右侧按钮的上边距 */
     background-color: #a30e0e; /* 暂停按钮颜色 */
 }
 
-/* 播放按钮悬停效果 */
-.play-button:hover , .pause-button:hover {
-    background-color: #b8410e;
+/* 通用悬停效果 */
+.play-button:hover, .pause-button:hover {
+    background-color: #eb4d26; /* 悬停时的颜色 */
+    transform: scale(1.05); /* 悬停时的放大效果 */
+}
+
+/* 活动状态效果（按钮按下时） */
+.play-button:active, .pause-button:active {
+    background-color: #c02424; /* 按下时的颜色 */
+    transform: scale(0.95); /* 按下时的缩小效果 */
 }
 
 .btn {
@@ -35,13 +45,17 @@
     background-color: #b01517;
     color: white;
     border: none;
-    border-radius: 5px;
-    margin-right: 10px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn:hover {
-    background-color: #d84506;
+    background-color: #d84506; /* 悬停时的颜色 */
+    transform: scale(1.05); /* 悬停时的放大效果 */
 }
 
-
+.btn:active {
+    background-color: #c02424; /* 按下时的颜色 */
+    transform: scale(0.95); /* 按下时的缩小效果 */
+}
