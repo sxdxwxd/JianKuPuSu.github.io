@@ -16,6 +16,7 @@ window.onclick = function(event) {
         event.target.style.display = 'none';
     }
 };
+
 // 点击播放音频
 function playAudio(audioId) {
     const audio = document.getElementById(audioId);
@@ -44,5 +45,36 @@ function pauseAudio(audioId) {
 }
 
 
+//导航栏
+function showSection(sectionId) {
+    const sections = document.querySelectorAll('.content-section');
+    const buttons = document.querySelectorAll('.nav-button');
 
+    buttons.forEach(button => {
+        button.classList.remove('selected');
+    });
+
+    const currentButton = document.querySelector(`button[data-section="${sectionId}"]`);
+    if (currentButton) {
+        currentButton.classList.add('selected');
+    }
+
+    sections.forEach(function(section) {
+        section.style.display = 'none'; // 隐藏所有部分
+    });
+    buttons.forEach(function(button) {
+        if (button.getAttribute('onclick').includes(sectionId)) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    });
+    var activeSection = document.getElementById(sectionId);
+    activeSection.style.display = 'block'; // 显示选中的部分
+
+    activeSection.style.opacity = 0;
+    setTimeout(function() {
+        activeSection.style.opacity = 1;
+    }, 10); // 简单的渐变效果
+}
 
