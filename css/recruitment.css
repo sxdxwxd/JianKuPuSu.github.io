@@ -1,0 +1,38 @@
+#recruitment {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+
+}
+
+#recruitment h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+#recruitment p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none; /* 隐藏滚动条 Firefox */
+    -ms-overflow-style: none; /* 隐藏滚动条 IE/Edge */
+}
+
+.row::-webkit-scrollbar {
+    display: none; /* 隐藏滚动条 Chrome/Safari */
+}
+
+.col-md-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
