@@ -1,7 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const bg = document.querySelector('.background');
     const numSpans = 20;
-    const formulaImages = ['url(../src/bg1.png)', 'url(../src/bg2.png)', 'url(../src/bg3.png)', 'url(../src/bg4.png)','url(../src/bg5.png)','url(../src/bg6.png)','url(../src/bg7.png)',];
+    const formulaImages = ['https://blogxd.oss-cn-beijing.aliyuncs.com/bg1.png', 
+                           'https://blogxd.oss-cn-beijing.aliyuncs.com/bg2.png', 
+                           'https://blogxd.oss-cn-beijing.aliyuncs.com/bg3.png',
+                           'https://blogxd.oss-cn-beijing.aliyuncs.com/bg4.png',
+                           'https://blogxd.oss-cn-beijing.aliyuncs.com/bg5.png',
+                           'https://blogxd.oss-cn-beijing.aliyuncs.com/bg6.png',
+                           'https://blogxd.oss-cn-beijing.aliyuncs.com/bg7.png'];
 
     for (let i = 0; i < numSpans; i++) {
         const span = document.createElement('span');
