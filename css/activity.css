@@ -1,0 +1,75 @@
+.activities-section {
+    padding: 50px 0;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    border-radius: 8px; /* 圆角 */
+}
+
+.activities-section h2,
+.activities-section h3 {
+    font-weight: 700;
+    color: #444; /* 标题颜色 */
+    margin-bottom: 30px;
+}
+
+.activities-section h2 {
+    font-size: 2.5rem;
+}
+
+.activities-section h3 {
+    font-size: 1.8rem;
+}
+
+.activities-section .col-md-4 {
+    display: flex; /* 将父级元素设置为 flex 布局 */
+    flex-wrap: wrap; /* 允许子元素换行 */
+    justify-content: center; /* 居中子元素 */
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: row;
+}
+
+.activities-section .activity-card {
+    background-color: #f9f9f9; /* 淡灰背景 */
+    border: 1px solid #ddd; /* 灰色边框 */
+    border-radius: 8px; /* 圆角 */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    transition: all 0.3s ease;
+    flex-wrap: wrap; /* 允许换行 */
+}
+
+.activities-section .activity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 更强的阴影 */
+}
+
+.activities-section .activity-card img {
+    width: 100%;
+    height: auto; /* 保持图像比例 */
+    border-radius: 8px; /* 圆角 */
+    margin-bottom: 15px;
+}
+
+.activities-section .activity-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.activities-section .activity-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.activities-section .activity-card a {
+    background-color: #e3d1d1;
+    border: none; /* 去除边框 */
+}
+
+.activities-section .activity-card a:hover {
+    background-color: #666666;
+}

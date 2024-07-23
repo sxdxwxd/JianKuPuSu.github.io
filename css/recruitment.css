@@ -1,0 +1,119 @@
+#recruitment {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(to right, #cfc5de 0%, #0cc7c9 100%);
+
+}
+
+#recruitment h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+#recruitment p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none; /* 隐藏滚动条 Firefox */
+    -ms-overflow-style: none; /* 隐藏滚动条 IE/Edge */
+}
+
+.row::-webkit-scrollbar {
+    display: none; /* 隐藏滚动条 Chrome/Safari */
+}
+
+.col-md-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.row .poster{
+    background-color: #f9f9f9; /* 淡灰背景 */
+    border: 1px solid #ddd; /* 灰色边框 */
+    border-radius: 8px; /* 圆角 */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    transition: all 0.3s ease;
+}
+
+.row .poster:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 更强的阴影 */
+}
+
+/* 放大模式样式 */
+.modal {
+    display: none; /* 隐藏模态框 */
+    position: fixed; /* 固定位置 */
+    z-index: 1; /* 确保模态框位于最顶层 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* 使模态框内容可滚动 */
+    background-color: rgb(0,0,0); /* 深色背景 */
+    background-color: rgba(0,0,0,0.9); /* 背景颜色透明度 */
+    animation: fadeIn 0.5s; /* 添加淡入动画 */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    animation: zoomIn 0.5s; /* 添加缩放动画 */
+}
+
+.modal-content img {
+    width: 100%;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 淡入动画 */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* 缩放动画 */
+@keyframes zoomIn {
+    from {transform: scale(0.8);}
+    to {transform: scale(1);}
+}

@@ -1,0 +1,83 @@
+/* 页面整体背景颜色和字体 */
+#about{
+    background: linear-gradient(to right, #cfc5de 0%, #0cc7c9 100%);
+}
+.about-section {
+    padding: 50px 0;
+    background-color: #fff; /* 白色背景 */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    border-radius: 8px; /* 圆角 */
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #444; /* 标题颜色 */
+    margin-bottom: 30px;
+}
+
+.about-section .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    text-indent: 2em;
+    margin: 15px 30px;
+}
+
+.about-section .about-departments {
+    display: flex;
+    flex-wrap: wrap; /* 允许换行 */
+    gap: 20px; /* 增加子项之间的间距 */
+    justify-content: center;
+}
+
+.about-section .department {
+    background-color: #f9f9f9; /* 淡灰背景 */
+    border: 1px solid #ddd; /* 灰色边框 */
+    border-radius: 8px; /* 圆角 */
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1 0 calc(50% - 20px); /* 确保两个元素可以并排显示 */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.about-section .department:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* 更强的阴影 */
+}
+
+.about-section .department h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-section .department p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    display: block;
+}
+
+.about-section .department img {
+    display: none;
+    width: 100%;
+}
+
+.about-section .department.active img {
+    display: block;
+}
+
+.about-section .department.active p {
+    display: none;
+}
+
+/* 配合 Bootstrap，使在不同设备上的样式更好 */
+@media (max-width: 768px) {
+    .about-section .department {
+        flex: 1 0 100%; /* 小屏幕上每行一个 */
+    }
+}

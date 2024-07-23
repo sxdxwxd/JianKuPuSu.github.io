@@ -1,0 +1,63 @@
+/* 首页容器 */
+#home {
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    color: #333;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 标题样式 */
+#home h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* 协会理念标题样式 */
+#home h2 {
+    font-size: 2em;
+    color: #555;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#home h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #fcb69f;
+    display: block;
+    margin: 10px auto;
+}
+
+/* 引言文字样式 */
+#home .intro-text {
+    font-size: 1.2em;
+    text-indent: 2em;
+    margin-bottom: 30px;
+}
+
+/* 概念段落样式 */
+#home .concept {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* 添加一些按钮样式 */
+.btn-learn-more {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background-color: #ff4e42;
+}
