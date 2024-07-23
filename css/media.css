@@ -89,7 +89,7 @@
 }
 
 /* 手机设备 (phones, small devices) */
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     body {
         font-size: 0.8rem;
     }
